@@ -1,9 +1,15 @@
 <?php
-/*
-Plugin Name: cPanel Hosting Information Widget
-Description: Adds a widget to the admin dashboard that detects if the current website is hosted on cPanel and displays the user quota.
-Version: 1.0
-Author: Stefan Pejcic
+/**
+ * Plugin Name:       cPanel Widget
+ * Plugin URI:        https://plugins.club/cpanel-widget/
+ * Description:       Adds a widget to the admin dashboard that detects if the current website is hosted on cPanel and displays the user quota.
+ * Version:           1.0
+ * Author:            plugins.club
+ * Author URI:        https://plugins.club
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Requires at least: 5.0
+ * Tested up to: 	  6.2
 */
 
 // Add the widget to the admin dashboard
@@ -170,3 +176,4 @@ echo '</div>';
 
 // Save the login information when the form is submitted
 add_action('admin_post_save_cpanel_login_info', 'cpanel_widget_save_login_info');
+
